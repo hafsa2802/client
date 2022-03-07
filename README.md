@@ -14,6 +14,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+### important notes
+the server should be run using 'npm run dev' on port 1337
+the client should be run using 'npm start' on port 3000
+
+the access to the interfaces should be through http://localhost:3000/login and http://localhost:3000/register
+
+an error might occur because of the react-router-dom node on the client server during the build, u should just reinstall the node using 'npm i react-router-dom'
+
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
@@ -31,12 +40,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run eject`
 
-the server should be run using 'npm run dev' on port 1337
-the client should be run using 'npm start' on port 3000
 
-the access to the interfaces should be through http://localhost:3000/login and http://localhost:3000/register
-
-an error might occur because of the react-router-dom node on the client server during the build, u should just reinstall the node using 'npm i react-router-dom'
 
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
