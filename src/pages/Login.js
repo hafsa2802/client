@@ -19,7 +19,15 @@ function Login() {
     })
 
     const data = await response.json()
-    console.log(data)
+
+    if(data.user){
+      localStorage.setItem('token', data.user)
+      alert('login successful')
+      window.location.href = '/dashboard'
+    } else {
+      alert('Please check your email and password')
+    }
+
   }
 
   return (
