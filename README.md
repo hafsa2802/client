@@ -31,6 +31,14 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run eject`
 
+the server should be run using 'npm run dev' on port 1337
+the client should be run using 'npm start' on port 3000
+
+the access to the interfaces should be through http://localhost:3000/login and http://localhost:3000/register
+
+an error might occur because of the react-router-dom node on the client server during the build, u should just reinstall the node using 'npm i react-router-dom'
+
+
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
